@@ -22,7 +22,7 @@ Now imagine, that the point $(cos(yaw), sin(yaw))$ needs to move up along y axis
 
 Both components x and z shrink, and the higher that point goes, the more x and z shrink.
 
-Source: <https://www.desmos.com/3d/hkbmib45or>
+Source: <https://www.desmos.com/3d/q35p9tcge7>
 
 Below is latex extracted from the desmos demo.
 
