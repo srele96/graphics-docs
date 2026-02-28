@@ -28,21 +28,31 @@ Below is latex extracted from the desmos demo.
 
 ```math
 \begin{align*}
+
 a_{yaw}=0.73\\
 a_{pitch}=0.73\\
-\\
+
+\\\\
+
 v_{z}=-\cos\left(a_{yaw}\right)\cos\left(a_{pitch}\right)\\
 v_{y}=\sin\left(a_{pitch}\right)\\
 v_{x}=\sin\left(a_{yaw}\right)\cos\left(a_{pitch}\right)\\
-\\
+
+\\\\
+
 p_{z}=\left(0,\ 0,\ v_{z}\right)\\
 p_{x}=\left(v_{x},\ 0,\ 0\right)\\
 p_{y}=\left(0,\ v_{y},\ 0\right)\\
-\\
+
+\\\\
+
 \text{vector}\left(p_{x},\ \left(p_{x}.x,\ p_{y}.y,\ p_{z}.z\right)\right)\\
 \text{vector}\left(p_{z},\ \left(p_{x}.x,\ p_{y}.y,\ p_{z}.z\right)\right)\\
 \text{vector}\left(p_{y},\ \left(p_{x}.x,\ p_{y}.y,\ p_{z}.z\right)\right)\\
-\\
+
+\\\\
+
 \left(v_{x},\ v_{y},\ v_{z}\right)
+
 \end{align*}
 ```
