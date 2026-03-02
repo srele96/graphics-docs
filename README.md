@@ -41,3 +41,6 @@ General:
 - Phong reflection model <https://en.wikipedia.org/wiki/Phong_reflection_model>
 - Phong reflection model (Source says this document is from Wikipedia, but it's clearly different) <http://newton.uam.mx/xgeorge/uea/graficacion/Archivos_relacionados_a_varias_temas_del_curso/Phong%20reflection%20model%20-%20Wikipedia.htm>
 - Phone reflection model computergraphics.stackexchange <https://computergraphics.stackexchange.com/questions/8349/what-are-the-3-types-of-light-reflection-from-surfaces-in-the-phong-lighting-mod>
+- Immersive linear algebra (interactive e-book) <https://immersivemath.com/ila/index.html>
+- Linear Algebra (Gilbert Strang) (MIT OCW) <https://opencw.aprende.org/courses/mathematics/18-06sc-linear-algebra-fall-2011/>
+- Introduction to Linear Algebra, Sixth Edition (2023) <https://math.mit.edu/~gs/linearalgebra/ila6/indexila6.html>
