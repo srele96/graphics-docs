@@ -44,3 +44,4 @@ General:
 - Immersive linear algebra (interactive e-book) <https://immersivemath.com/ila/index.html>
 - Linear Algebra (Gilbert Strang) (MIT OCW) <https://opencw.aprende.org/courses/mathematics/18-06sc-linear-algebra-fall-2011/>
 - Introduction to Linear Algebra, Sixth Edition (2023) <https://math.mit.edu/~gs/linearalgebra/ila6/indexila6.html>
+- Linear Algebra Done Right (Sheldon Axler) <https://linear.axler.net/>
