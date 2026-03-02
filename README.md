@@ -38,3 +38,6 @@ General:
 - Google search: sphere coordinate math
 - <https://en.wikipedia.org/wiki/Spherical_coordinate_system>
 - Google search: interpolation uses barycentric coordinates
+- Phong reflection model <https://en.wikipedia.org/wiki/Phong_reflection_model>
+- Phong reflection model (Source says this document is from Wikipedia, but it's clearly different) <http://newton.uam.mx/xgeorge/uea/graficacion/Archivos_relacionados_a_varias_temas_del_curso/Phong%20reflection%20model%20-%20Wikipedia.htm>
+- Phone reflection model computergraphics.stackexchange <https://computergraphics.stackexchange.com/questions/8349/what-are-the-3-types-of-light-reflection-from-surfaces-in-the-phong-lighting-mod>
