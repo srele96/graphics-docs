@@ -45,3 +45,5 @@ General:
 - Linear Algebra (Gilbert Strang) (MIT OCW) <https://opencw.aprende.org/courses/mathematics/18-06sc-linear-algebra-fall-2011/>
 - Introduction to Linear Algebra, Sixth Edition (2023) <https://math.mit.edu/~gs/linearalgebra/ila6/indexila6.html>
 - Linear Algebra Done Right (Sheldon Axler) <https://linear.axler.net/>
+- Advanced Lighting learnopengl <https://learnopengl.com/Advanced-Lighting/Advanced-Lighting>
+- Energy Conservation In Games <https://www.rorydriscoll.com/2009/01/25/energy-conservation-in-games/>
