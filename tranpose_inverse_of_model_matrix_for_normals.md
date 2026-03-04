@@ -61,3 +61,7 @@ _The scale deforms the line, and hence affects the normal. Therefore, simply app
 _The line must not be perfectly vertical or horizontal to make this test work. For some reason, horizontal line keeps perpendicular normal regardless of the scaling factor._
 
 _The problem is as follows: I think that the matrix can preserve either the position or direction. Our choice preserves direction, so the position is mangled in the process. One solution is to get the distance from the center (anchor) and offset the direction vector (for vizualistic purposes). However, slightly cleaner is to keep center position and move it with model matrix at all times, and use it as an anchor._
+
+## Math source
+
+In case desmos samples disappear, the math is in this document: [desmos/tranpose_inverse_of_model_matrix_for_normals.md](./desmos/tranpose_inverse_of_model_matrix_for_normals.md)
