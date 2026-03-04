@@ -18,22 +18,23 @@ try {
   const absolutePath = path.resolve(inputPath);
   const fileNameNoExt = path.basename(absolutePath, path.extname(absolutePath));
   const outputDir = path.dirname(absolutePath);
-
-  // Output file matches input name: e.g., "matrix_logic.json" -> "matrix_logic.md"
   const outputPath = path.join(outputDir, `${fileNameNoExt}.md`);
 
   const data = JSON.parse(fs.readFileSync(absolutePath, "utf8"));
   const expressions = data.expressions.list;
 
-  // Header matches the filename
   let markdownContent = `# ${fileNameNoExt}\n\n`;
   markdownContent += `> **Random Seed:** \`${data.randomSeed}\`\n\n`;
 
   expressions.forEach((item) => {
+    // Skip expressions explicitly marked as hidden to keep MD clean
+    if (item.hidden) return;
+
     if (item.type === "text") {
-      markdownContent += `\n${item.text}\n\n`;
+      markdownContent += `${item.text}\n\n`;
     } else if (item.type === "expression" && item.latex) {
-      markdownContent += `$$\n${item.latex}\n$$\n`;
+      // Added extra newline after $$ to ensure GitHub renders labels correctly
+      markdownContent += `$$\n${item.latex}\n$$\n\n`;
 
       if (item.label) {
         markdownContent += `*Label: ${item.label}*\n\n`;
