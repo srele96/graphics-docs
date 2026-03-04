@@ -6,7 +6,7 @@ Desmos demo: <https://www.desmos.com/calculator/usaasi5pim>
 
 ## Explanation
 
-I wanted to understand the reason for using transpose(inverse(model)) * normal
+I wanted to understand the reason for using transpose(inverse(model)) \* normal
 
 This approach with points in 2d space completely fails to visualize it
 
@@ -29,3 +29,35 @@ The problem occurs, if we scale only one of the components, it will warp the sha
 I think an additional good experiment would be in desmos 3d. We draw a plane, and in the center, a normal vector. We apply the model matrix ROTATION + SCALE to the plane. What happens to the normal? We then apply ROTATION + SCALE to a normal. What happens to the normal? We then apply inverse (ROTATION + SCALE) to normal. What happens to the normal? We then apply transpose(inverse(ROTATION + SCALE)) to normal. What happens to the normal?
 
 One of the quirks I see is we need two components of understanding, visual and mathematical.
+
+## Correctly broken normal
+
+The following sample, demonstrates a broken normal, due to the scaling factor in the model matrix.
+
+<https://www.desmos.com/calculator/lpbz2vvco3>
+
+We had to make the line non-vertical and non-horizontal to break the normal's perpendicularity.
+
+## Successfully corrected normal
+
+In the demo below, after applying the `transpose(inverse())` operation, we get a normal with a good direction.
+
+However, the normal does not follow the line properly, it seems that transpose(inverse()) does not handle that, as well, but that should be fine? I think.
+
+<https://www.desmos.com/calculator/sksnomszkg>
+
+## Final result
+
+Our final result renders mangled normals, and correct normals.
+
+There are a few comments that explain why the things are the way they are.
+
+<https://www.desmos.com/calculator/qrp4qugsmd>
+
+## Notes (not to get lost)
+
+_The scale deforms the line, and hence affects the normal. Therefore, simply applying the model matrix to the normal, will not yield perpendicular normal._
+
+_The line must not be perfectly vertical or horizontal to make this test work. For some reason, horizontal line keeps perpendicular normal regardless of the scaling factor._
+
+_The problem is as follows: I think that the matrix can preserve either the position or direction. Our choice preserves direction, so the position is mangled in the process. One solution is to get the distance from the center (anchor) and offset the direction vector (for vizualistic purposes). However, slightly cleaner is to keep center position and move it with model matrix at all times, and use it as an anchor._

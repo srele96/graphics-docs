@@ -1,0 +1,375 @@
+{
+  "version": 11,
+  "randomSeed": "4a2f46e79be70f11d4f050a846ad18b2",
+  "graph": {
+    "viewport": {
+      "xmin": -2.696037742219234,
+      "ymin": -0.479020162609634,
+      "xmax": 4.439686152706615,
+      "ymax": 4.872772758584754
+    },
+    "__v12ViewportLatexStash": {
+      "xmin": "-2.696037742219234",
+      "xmax": "4.439686152706615",
+      "ymin": "-0.479020162609634",
+      "ymax": "4.872772758584754"
+    }
+  },
+  "expressions": {
+    "list": [
+      {
+        "type": "expression",
+        "id": "1",
+        "color": "#c74440",
+        "latex": "O_{inverse}\\left(M_{a}\\right)=O_{multiplyScalar}\\left(\\left[M_{a}\\left[4\\right],-M_{a}\\left[2\\right],-M_{a}\\left[3\\right],M_{a}\\left[1\\right]\\right],\\frac{1}{M_{a}\\left[1\\right]M_{a}\\left[4\\right]-M_{a}\\left[2\\right]M_{a}\\left[3\\right]}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "2",
+        "color": "#2d70b3",
+        "latex": "O_{multiplyScalar}\\left(M_{a},v\\right)=\\left[M_{a}\\left[1\\right]v,\\ M_{a}\\left[2\\right]v,M_{a}\\left[3\\right]v,M_{a}\\left[4\\right]v\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "7",
+        "color": "#2d70b3",
+        "latex": "O_{multiply}\\left(M_{a},V_{a}\\right)=\\left[M_{a}\\left[1\\right]V_{a}\\left[1\\right]+M_{a}\\left[2\\right]V_{a}\\left[2\\right],M_{a}\\left[3\\right]V_{a}\\left[1\\right]+M_{a}\\left[4\\right]V_{a}\\left[2\\right]\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "16",
+        "color": "#c74440",
+        "latex": "O_{multiplyMat}\\left(M_{a},M_{b}\\right)=\\left[M_{a}\\left[1\\right]M_{b}\\left[1\\right]+M_{a}\\left[2\\right]M_{b}\\left[3\\right],M_{a}\\left[1\\right]M_{b}\\left[2\\right]+M_{a}\\left[2\\right]M_{b}\\left[4\\right],M_{a}\\left[3\\right]M_{b}\\left[1\\right]+M_{a}\\left[4\\right]M_{b}\\left[3\\right],M_{a}\\left[3\\right]M_{b}\\left[2\\right]+M_{a}\\left[4\\right]M_{b}\\left[4\\right]\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "20",
+        "color": "#6042a6",
+        "latex": "O_{transpose}\\left(M_{a}\\right)=\\left[M_{a}\\left[1\\right],M_{a}\\left[3\\right],M_{a}\\left[2\\right],M_{a}\\left[4\\right]\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "3",
+        "color": "#388c46",
+        "latex": "O_{vecToPoint}\\left(V_{a}\\right)=\\left(V_{a}\\left[1\\right],V_{a}\\left[2\\right]\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "6",
+        "color": "#c74440",
+        "latex": "M_{r}\\left(v_{a}\\right)=\\left[\\cos\\left(v_{a}\\right),-\\sin\\left(v_{a}\\right),\\sin\\left(v_{a}\\right),\\cos\\left(v_{a}\\right)\\right]",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "13",
+        "color": "#388c46",
+        "latex": "M_{s}\\left(V_{a}\\right)=\\left[V_{a}\\left[1\\right],0,0,V_{a}\\left[2\\right]\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "72",
+        "color": "#388c46",
+        "latex": "V_{angle}=-4.908738521234052",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "-2\\pi",
+          "max": "2\\pi",
+          "step": "\\frac{\\pi}{16}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "8",
+        "color": "#388c46",
+        "latex": "m_{r}=M_{r}\\left(V_{angle}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "text",
+        "id": "82",
+        "text": "The scale deforms the line, and hence affects the normal. Therefore, simply applying the model matrix to the normal, will not yield perpendicular normal."
+      },
+      {
+        "type": "expression",
+        "id": "14",
+        "color": "#6042a6",
+        "latex": "m_{s}=M_{s}\\left(\\left[2,1\\right]\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "15",
+        "color": "#000000",
+        "latex": "m_{m}=O_{multiplyMat}\\left(m_{r},m_{s}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "19",
+        "color": "#6042a6",
+        "latex": "v_{a}=\\left[\\cos\\left(\\frac{\\pi}{\\left(4\\right)}\\right),\\sin\\left(\\frac{\\pi}{4}\\right)\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "17",
+        "color": "#2d70b3",
+        "latex": "O_{vecToPoint}\\left(v_{a}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "23",
+        "color": "#388c46",
+        "latex": "O_{vecToPoint}\\left(O_{multiply}\\left(m_{s},v_{a}\\right)\\right)",
+        "label": "scaled",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "9",
+        "color": "#6042a6",
+        "latex": "v_{r}=O_{multiply}\\left(m_{m},v_{a}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "10",
+        "color": "#000000",
+        "latex": "O_{vecToPoint}\\left(v_{r}\\right)",
+        "label": "scaled + rotated",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "21",
+        "color": "#000000",
+        "latex": "v_{ri}=O_{multiply}\\left(O_{inverse}\\left(m_{m}\\right),v_{a}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "22",
+        "color": "#6042a6",
+        "latex": "O_{vecToPoint}\\left(v_{ri}\\right)",
+        "label": "inverse",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "11",
+        "color": "#c74440",
+        "latex": "v_{rti}=O_{multiply}\\left(O_{transpose}\\left(O_{inverse}\\left(m_{m}\\right)\\right),v_{a}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "12",
+        "color": "#c74440",
+        "latex": "O_{vecToPoint}\\left(v_{rti}\\right)",
+        "label": "transpose & inverse",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "49",
+        "color": "#c74440",
+        "latex": "O_{line}\\left(t,\\ P_{a},P_{b}\\right)=P_{a}+t\\left(P_{b}-P_{a}\\right)"
+      },
+      {
+        "type": "text",
+        "id": "84",
+        "text": "The line must not be perfectly vertical or horizontal to make this test work. For some reason, horizontal line keeps perpendicular normal regardless of the scaling factor."
+      },
+      {
+        "type": "expression",
+        "id": "55",
+        "color": "#2d70b3",
+        "latex": "P_{begin}=\\left[1,1\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "56",
+        "color": "#388c46",
+        "latex": "P_{end}=\\left[2,2\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "52",
+        "color": "#6042a6",
+        "latex": "O_{line}\\left(t,O_{vecToPoint}\\left(P_{begin}\\right),O_{vecToPoint}\\left(P_{end}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "57",
+        "color": "#6042a6",
+        "latex": "P_{normalBegin}=\\left[0,0\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "65",
+        "color": "#c74440",
+        "latex": "P_{normalEnd}=\\left[-1,1\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "53",
+        "color": "#c74440",
+        "latex": "O_{line}\\left(t,O_{vecToPoint}\\left(P_{normalBegin}\\right),O_{vecToPoint}\\left(P_{normalEnd}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "54",
+        "color": "#c74440",
+        "latex": "P_{normalOffsetW}=\\left[P_{begin}\\left[1\\right]+\\frac{P_{end}\\left[1\\right]-P_{begin}\\left[1\\right]}{2},P_{end}\\left[2\\right]+\\frac{P_{end}\\left[2\\right]-P_{begin}\\left[2\\right]}{2}\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "80",
+        "color": "#000000",
+        "latex": "P_{normalOffset}=\\frac{P_{begin}+P_{end}}{2}"
+      },
+      {
+        "type": "expression",
+        "id": "66",
+        "color": "#2d70b3",
+        "latex": "P_{normalOnLineBegin}=P_{normalBegin}+P_{normalOffset}"
+      },
+      {
+        "type": "expression",
+        "id": "67",
+        "color": "#388c46",
+        "latex": "P_{normalOnLineEnd}=P_{normalEnd}+P_{normalOffset}"
+      },
+      {
+        "type": "expression",
+        "id": "68",
+        "color": "#fa7e19",
+        "latex": "O_{line}\\left(t,O_{vecToPoint}\\left(P_{normalOnLineBegin}\\right),O_{vecToPoint}\\left(P_{normalOnLineEnd}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "69",
+        "color": "#000000",
+        "latex": "P_{aLine}=O_{multiply}\\left(m_{m},P_{begin}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "70",
+        "color": "#c74440",
+        "latex": "P_{bLine}=O_{multiply}\\left(m_{m},P_{end}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "71",
+        "color": "#c74440",
+        "latex": "O_{line}\\left(t,O_{vecToPoint}\\left(P_{aLine}\\right),O_{vecToPoint}\\left(P_{bLine}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "91",
+        "color": "#6042a6",
+        "latex": "P_{center}=\\frac{P_{aLine}+P_{bLine}}{2}"
+      },
+      {
+        "type": "expression",
+        "id": "73",
+        "color": "#6042a6",
+        "latex": "P_{aNormal}=O_{multiply}\\left(m_{m},P_{normalOnLineBegin}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "74",
+        "color": "#000000",
+        "latex": "P_{bNormal}=O_{multiply}\\left(m_{m},P_{normalOnLineEnd}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "75",
+        "color": "#fa7e19",
+        "latex": "O_{line}\\left(t,O_{vecToPoint}\\left(P_{aNormal}\\right),O_{vecToPoint}\\left(P_{bNormal}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "88",
+        "color": "#c74440",
+        "latex": "P_{cNormal}=O_{multiply}\\left(O_{transpose}\\left(O_{inverse}\\left(m_{m}\\right)\\right),P_{normalOnLineBegin}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "89",
+        "color": "#2d70b3",
+        "latex": "P_{dNormal}=O_{multiply}\\left(O_{transpose}\\left(O_{inverse}\\left(m_{m}\\right)\\right),P_{normalOnLineEnd}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "90",
+        "color": "#000000",
+        "latex": "O_{line}\\left(t,O_{vecToPoint}\\left(P_{cNormal}\\right),O_{vecToPoint}\\left(P_{dNormal}\\right)\\right)"
+      },
+      {
+        "type": "text",
+        "id": "97",
+        "text": "The problem is as follows: I think that the matrix can preserve either the position or direction. Our choice preserves direction, so the position is mangled in the process. One solution is to get the distance from the center (anchor) and offset the direction vector (for vizualistic purposes). However, slightly cleaner is to keep center position and move it with model matrix at all times, and use it as an anchor."
+      },
+      {
+        "type": "expression",
+        "id": "95",
+        "color": "#388c46",
+        "latex": "P_{distance}=P_{cNormal}-P_{center}"
+      },
+      {
+        "type": "expression",
+        "id": "92",
+        "color": "#000000",
+        "latex": "P_{eNormal}=P_{cNormal}-P_{distance}"
+      },
+      {
+        "type": "expression",
+        "id": "93",
+        "color": "#c74440",
+        "latex": "P_{fNormal}=P_{dNormal}-P_{distance}"
+      },
+      {
+        "type": "expression",
+        "id": "94",
+        "color": "#2d70b3",
+        "latex": "O_{line}\\left(t,O_{vecToPoint}\\left(P_{eNormal}\\right),O_{vecToPoint}\\left(P_{fNormal}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "76",
+        "color": "#2d70b3",
+        "latex": "P_{normalBadBegin}=O_{multiply}\\left(m_{m},P_{normalBegin}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "77",
+        "color": "#388c46",
+        "latex": "P_{normalBadEnd}=O_{multiply}\\left(m_{m},P_{normalEnd}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "78",
+        "color": "#fa7e19",
+        "latex": "O_{line}\\left(t,O_{vecToPoint}\\left(P_{normalBadBegin}\\right),O_{vecToPoint}\\left(P_{normalBadEnd}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "85",
+        "color": "#388c46",
+        "latex": "P_{normalGoodBegin}=O_{multiply}\\left(O_{transpose}\\left(O_{inverse}\\left(m_{m}\\right)\\right),P_{normalBegin}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "86",
+        "color": "#6042a6",
+        "latex": "P_{normalGoodEnd}=O_{multiply}\\left(O_{transpose}\\left(O_{inverse}\\left(m_{m}\\right)\\right),P_{normalEnd}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "87",
+        "color": "#000000",
+        "latex": "O_{line}\\left(t,O_{vecToPoint}\\left(P_{normalGoodBegin}\\right),O_{vecToPoint}\\left(P_{normalGoodEnd}\\right)\\right)"
+      }
+    ]
+  },
+  "includeFunctionParametersInRandomSeed": true,
+  "doNotMigrateMovablePointStyle": true
+}
