@@ -1,0 +1,220 @@
+{
+  "version": 11,
+  "randomSeed": "251623bef56723e6e51226965c9c8db7",
+  "graph": {
+    "viewport": {
+      "xmin": -6.700478203124975,
+      "ymin": -6.700478203124972,
+      "zmin": -6.700478203124975,
+      "xmax": 6.700478203124975,
+      "ymax": 6.700478203124972,
+      "zmax": 6.700478203124975
+    },
+    "worldRotation3D": [
+      3.904601573395923e-18, 0.9979648149584974, -0.06376698287399206,
+      -6.110772081503022e-17, 0.06376698287399206, 0.9979648149584974, 1, 0,
+      6.123233995736766e-17
+    ],
+    "axis3D": [0.99796481498865, 0.06376698287591873, -8.904901441552005e-16],
+    "product": "graphing-3d",
+    "threeDMode": true,
+    "__v12ViewportLatexStash": {
+      "xmin": "-6.700478203124975",
+      "xmax": "6.700478203124975",
+      "ymin": "-6.700478203124972",
+      "ymax": "6.700478203124972",
+      "zmin": "-6.700478203124975",
+      "zmax": "6.700478203124975"
+    }
+  },
+  "expressions": {
+    "list": [
+      {
+        "type": "expression",
+        "id": "2",
+        "color": "#6042a6",
+        "latex": "P=\\left(0,0,0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "3",
+        "color": "#388c46",
+        "latex": "v_{u}=\\left(4,0,0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "4",
+        "color": "#6042a6",
+        "latex": "v_{v}=\\left(0,4,0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "15",
+        "color": "#aaaaaa",
+        "latex": "H\\left(u,v\\right)=\\cos\\left(\\pi u\\right)^{3}"
+      },
+      {
+        "type": "expression",
+        "id": "11",
+        "color": "#c74440",
+        "latex": "S\\left(a,b\\right)=P+av_{u}+bv_{v}+\\left(0,0,H\\left(a,b\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "12",
+        "color": "#2d70b3",
+        "latex": "S\\left(u,v\\right)",
+        "parametricDomain3Du": {
+          "min": "-1",
+          "max": "1"
+        },
+        "parametricDomain3Dv": {
+          "min": "-1",
+          "max": "1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "18",
+        "color": "#388c46",
+        "latex": "v_{yaw}=\\frac{\\pi}{4}"
+      },
+      {
+        "type": "expression",
+        "id": "19",
+        "color": "#6042a6",
+        "latex": "v_{pitch}=\\frac{\\pi}{4}"
+      },
+      {
+        "type": "expression",
+        "id": "32",
+        "color": "#c74440"
+      },
+      {
+        "type": "expression",
+        "id": "33",
+        "color": "#2d70b3",
+        "latex": "v_{ang}=-2.356194490192345",
+        "hidden": true,
+        "slider": {
+          "min": "-5.105088062083414",
+          "max": "5.105088062083414",
+          "step": "\\frac{\\pi}{16}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "20",
+        "color": "#aaaaaa",
+        "latex": "q=\\left(\\sin\\left(v_{ang}\\right),\\cos\\left(v_{ang}\\right),0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "27",
+        "color": "#c74440",
+        "latex": "w=\\left(\\sin\\left(v_{ang}+\\frac{\\pi}{2}\\right),\\cos\\left(v_{ang}+\\frac{\\pi}{2}\\right),0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "13",
+        "color": "#388c46",
+        "latex": "k=S\\left(a,b\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "21",
+        "color": "#c74440"
+      },
+      {
+        "type": "expression",
+        "id": "25",
+        "color": "#6042a6",
+        "latex": "i=-0.5",
+        "hidden": true,
+        "slider": {
+          "step": ".1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "26",
+        "color": "#aaaaaa",
+        "latex": "j=-0.1",
+        "hidden": true,
+        "slider": {
+          "step": ".1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "22",
+        "color": "#c74440",
+        "latex": "o_{dot}\\left(v_{a},v_{b}\\right)=v_{a}.x\\cdot v_{b}.x+v_{a}.y\\cdot v_{b}.y+v_{a}.z\\cdot v_{b}.z"
+      },
+      {
+        "type": "expression",
+        "id": "29",
+        "color": "#388c46",
+        "latex": "o_{normalize}\\left(v\\right)=\\frac{v}{\\left|v\\right|}"
+      },
+      {
+        "type": "expression",
+        "id": "30",
+        "color": "#6042a6",
+        "latex": "v_{uNorm}=o_{normalize}\\left(v_{u}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "31",
+        "color": "#aaaaaa",
+        "latex": "v_{vNorm}=o_{normalize}\\left(v_{v}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "23",
+        "color": "#2d70b3",
+        "latex": "w_{a}=i\\cdot o_{dot}\\left(v_{uNorm},q\\right)+j\\cdot o_{dot}\\left(v_{uNorm},w\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "28",
+        "color": "#2d70b3",
+        "latex": "w_{b}=i\\cdot o_{dot}\\left(v_{vNorm},w\\right)+j\\cdot o_{dot}\\left(v_{vNorm},q\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "16",
+        "color": "#c74440",
+        "latex": "a=0.3",
+        "hidden": true,
+        "slider": {
+          "step": ".1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "17",
+        "color": "#2d70b3",
+        "latex": "b=0.5",
+        "hidden": true,
+        "slider": {
+          "step": ".1"
+        }
+      },
+      {
+        "type": "text",
+        "id": "35",
+        "text": "Initially i thought that maybe, maybe, MAYBE, a point that moves on the plane and follows plane trajectory is somehow constrained by some function, or something.\n\nNo.\n\nThe function which produced plane, is called, with input, but to produce a single vertex. That vertex is surely going to be on top of the plane.\n\nHowever, to change the axis movement of the vertex, we actually need to define axes to be moved along.\n\nIn this case, we introduced 2 perpendicular direction vectors. They are our new axes.\n\nWe compute the angle between our desired direction vector axes, and the direction vectors for the sides of the plane.\n\nEssentially, allows us to compute movement alongside new 2 vectors, and get coordinates relative to the axes used previously... I think..."
+      },
+      {
+        "type": "expression",
+        "id": "14",
+        "color": "#6042a6",
+        "latex": "S\\left(w_{a},w_{b}\\right)"
+      }
+    ]
+  },
+  "includeFunctionParametersInRandomSeed": true,
+  "doNotMigrate3dLineWidthZero": true,
+  "doNotMigrateMovablePointStyle": true
+}
