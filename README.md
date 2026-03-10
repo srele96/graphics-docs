@@ -10,6 +10,9 @@ Desmos:
 
 General:
 
+- Render Graphs <https://logins.github.io/graphics/2021/05/31/RenderGraphs.html>
+- Scene Graph Architectures in Modern Game Engines <https://levelup.gitconnected.com/scene-graph-architectures-in-modern-game-engines-572b09f95e13>
+- Perlin noise (Procedural generation) <https://en.wikipedia.org/wiki/Perlin_noise>
 - Homogeneous coordinates <https://en.wikipedia.org/wiki/Homogeneous_coordinates#Change_of_coordinate_systems>
 - Projective geometry <https://en.wikipedia.org/wiki/Projective_geometry>
 - Spherical coordinate system <https://en.wikipedia.org/wiki/Spherical_coordinate_system>
