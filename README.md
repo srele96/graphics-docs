@@ -50,3 +50,4 @@ General:
 - Linear Algebra Done Right (Sheldon Axler) <https://linear.axler.net/>
 - Advanced Lighting learnopengl <https://learnopengl.com/Advanced-Lighting/Advanced-Lighting>
 - Energy Conservation In Games <https://www.rorydriscoll.com/2009/01/25/energy-conservation-in-games/>
+- What is a renderpass <https://stackoverflow.com/questions/34382340/what-is-a-renderpass>
