@@ -8,6 +8,14 @@ Desmos:
 
 - (LookAt matrix) <https://www.desmos.com/3d/dontpst5ej>
 
+Organize shaders
+
+- Ubershaders: A Ridiculous Solution to an Impossible Problem <https://dolphin-emu.org/blog/2017/07/30/ubershaders/>
+- Uber Shaders and Shader Permutations <https://alextardif.com/UberShader.html>
+- About Uber Shader <https://radeon-pro.github.io/RadeonProRenderDocs/en/uber/about.html>
+- What is a uber shader? <https://gamedev.net/forums/topic/659145-what-is-a-uber-shader/>
+- Order your graphics draw calls around! <https://realtimecollisiondetection.net/blog/?p=86>
+
 General:
 
 - Render Graphs <https://logins.github.io/graphics/2021/05/31/RenderGraphs.html>
@@ -51,3 +59,8 @@ General:
 - Advanced Lighting learnopengl <https://learnopengl.com/Advanced-Lighting/Advanced-Lighting>
 - Energy Conservation In Games <https://www.rorydriscoll.com/2009/01/25/energy-conservation-in-games/>
 - What is a renderpass <https://stackoverflow.com/questions/34382340/what-is-a-renderpass>
+- Using OpenGL uniforms/attributes/outputs in more efficient way <https://hero.handmade.network/forums/code-discussion/t/2479-using_opengl_uniforms_attributes_outputs_in_more_efficient_way>
+- Explicit vs Automatic attribute location binding for OpenGL shaders <https://stackoverflow.com/questions/4635913/explicit-vs-automatic-attribute-location-binding-for-opengl-shaders>
+- What does it mean when we declare layout (location = n) in shader file? <https://www.reddit.com/r/opengl/comments/64p8l8/what_does_it_mean_when_we_declare_layout_location/>
+- shared Shader Locations for different shaders <https://stackoverflow.com/questions/20768370/shared-shader-locations-for-different-shaders>
+- Explicit vs Automatic attribute location binding for OpenGL shaders <https://stackoverflow.com/questions/4635913/explicit-vs-automatic-attribute-location-binding-for-opengl-shaders>
