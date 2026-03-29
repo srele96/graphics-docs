@@ -64,3 +64,9 @@ General:
 - What does it mean when we declare layout (location = n) in shader file? <https://www.reddit.com/r/opengl/comments/64p8l8/what_does_it_mean_when_we_declare_layout_location/>
 - shared Shader Locations for different shaders <https://stackoverflow.com/questions/20768370/shared-shader-locations-for-different-shaders>
 - Explicit vs Automatic attribute location binding for OpenGL shaders <https://stackoverflow.com/questions/4635913/explicit-vs-automatic-attribute-location-binding-for-opengl-shaders>
+- Render Commands <https://learn.foundry.com/modo/content/help/pages/rendering/render_commands.html>
+- OpenGL Render Queue Design <https://gamedev.stackexchange.com/questions/114445/opengl-render-queue-design>
+- **cppeng** learn engine C++ & OpenGL <https://github.com/Division/cppeng>
+- Brenta engine C++ & OpenGL <https://github.com/San7o/Brenta-Engine>
+- OpenGL Math Primer <https://lazyfoo.net/articles/article10/index.php>
+- Normal mapping (tangent & bitangent) <https://www.opengl-tutorial.org/intermediate-tutorials/tutorial-13-normal-mapping/>
